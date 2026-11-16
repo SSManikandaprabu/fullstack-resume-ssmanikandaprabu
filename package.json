@@ -1,0 +1,25 @@
+{
+  "name": "fullstack-resume-ss-manikanda-prabu",
+  "version": "1.0.0",
+  "description": "Full Stack Software Engineer Resume & Portfolio - S S Manikanda Prabu",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "node server.js"
+  },
+  "dependencies": {
+    "express": "^4.19.2"
+  },
+  "engines": {
+    "node": ">=18.0.0"
+  },
+  "keywords": [
+    "resume",
+    "portfolio",
+    "fullstack",
+    "developer",
+    "engineer"
+  ],
+  "author": "S S Manikanda Prabu",
+  "license": "MIT"
+}

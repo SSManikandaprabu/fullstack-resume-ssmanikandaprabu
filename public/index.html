@@ -1,0 +1,572 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>S S Manikanda Prabu — Full Stack Software Engineer | Resume & Portfolio</title>
+  
+  <meta name="description" content="Resume and portfolio of S S Manikanda Prabu, Full Stack Software Engineer specializing in modern JavaScript, TypeScript, Node.js, Python, luxury UI/UX, and scalable distributed systems." />
+  <meta name="author" content="S S Manikanda Prabu" />
+  <meta property="og:title" content="S S Manikanda Prabu — Full Stack Software Engineer" />
+  <meta property="og:description" content="Interactive Full Stack Resume featuring real-world projects, modern architecture, and interactive engineering showcase." />
+  <meta property="og:type" content="website" />
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&family=JetBrains+Mono:wght@400;500;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+
+  <!-- Top Sticky Navigation -->
+  <header class="site-header" id="header">
+    <div class="container header-container">
+      <a href="#hero" class="brand-monogram">
+        <span class="mono-symbol">MP</span>
+        <span class="mono-text">S S Manikanda Prabu</span>
+      </a>
+
+      <nav class="desktop-nav" aria-label="Primary navigation">
+        <a href="#about" class="nav-link">About</a>
+        <a href="#skills" class="nav-link">Skills</a>
+        <a href="#projects" class="nav-link">Projects</a>
+        <a href="#experience" class="nav-link">Experience</a>
+        <a href="#contact" class="nav-link">Contact</a>
+      </nav>
+
+      <div class="header-actions">
+        <button id="theme-toggle" class="icon-btn" aria-label="Toggle light/dark theme" title="Toggle theme">
+          <span class="theme-icon-dark">&#9790;</span>
+          <span class="theme-icon-light">&#9728;</span>
+        </button>
+
+        <button onclick="window.print()" class="btn btn-secondary btn-sm print-hide" title="Print clean ATS-friendly PDF">
+          <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M6 9V2h12v7"/><path d="M6 18H4a2 2 0 0 1-2-2v-5a2 2 0 0 1 2-2h16a2 2 0 0 1 2 2v5a2 2 0 0 1-2 2h-2"/><rect x="6" y="14" width="12" height="8"/></svg>
+          <span>PDF / Print</span>
+        </button>
+
+        <a href="#contact" class="btn btn-primary btn-sm print-hide">Hire Me</a>
+
+        <button id="mobile-toggle" class="icon-btn mobile-menu-btn print-hide" aria-label="Toggle mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Mobile Drawer Navigation -->
+  <div class="mobile-drawer" id="mobile-drawer">
+    <nav class="mobile-drawer-nav">
+      <a href="#about" class="drawer-link">About</a>
+      <a href="#skills" class="drawer-link">Skills</a>
+      <a href="#projects" class="drawer-link">Projects</a>
+      <a href="#experience" class="drawer-link">Experience</a>
+      <a href="#contact" class="drawer-link">Contact</a>
+      <div class="drawer-actions">
+        <button onclick="window.print()" class="btn btn-secondary btn-block">Download / Print PDF</button>
+        <a href="#contact" class="btn btn-primary btn-block">Get in Touch</a>
+      </div>
+    </nav>
+  </div>
+
+  <main class="main-content">
+
+    <!-- HERO SECTION -->
+    <section class="section hero-section" id="hero">
+      <div class="container hero-container">
+        
+        <div class="hero-badge-wrap">
+          <span class="status-indicator"></span>
+          <span class="status-text">Available for Full-Stack & Engineering Roles</span>
+        </div>
+
+        <h1 class="hero-title">
+          Hi, I'm <span class="gradient-text">S S Manikanda Prabu</span>
+        </h1>
+
+        <p class="hero-role">
+          Full Stack Software Engineer &amp; Modern Web Architect
+        </p>
+
+        <p class="hero-summary">
+          Specializing in end-to-end full stack development: architecting <strong>high-performance frontend experiences</strong> with 60fps micro-interactions, robust <strong>Node.js &amp; Python REST/GraphQL APIs</strong>, and distributed microservices with PostgreSQL, Redis, and containerized deployments.
+        </p>
+
+        <!-- Quick Contacts & Links -->
+        <div class="quick-contact-pills">
+          <a href="mailto:ssmanikandaprabu@gmail.com" class="contact-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"/><polyline points="22,6 12,13 2,6"/></svg>
+            <span>ssmanikandaprabu@gmail.com</span>
+          </a>
+
+          <a href="https://github.com/SSManikandaprabu" target="_blank" rel="noopener" class="contact-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22"/></svg>
+            <span>github.com/SSManikandaprabu</span>
+          </a>
+
+          <span class="contact-pill">
+            <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
+            <span>Tamil Nadu, India · Remote Worldwide</span>
+          </span>
+        </div>
+
+        <div class="hero-cta-group print-hide">
+          <a href="#projects" class="btn btn-primary btn-lg">Explore Projects &darr;</a>
+          <button onclick="window.print()" class="btn btn-secondary btn-lg">Download PDF Resume</button>
+          <a href="#contact" class="btn btn-tertiary btn-lg">Let's Connect</a>
+        </div>
+
+        <!-- Metric Cards -->
+        <div class="hero-metrics-grid">
+          <div class="metric-card">
+            <span class="metric-number">Full Stack</span>
+            <span class="metric-label">Frontend &amp; Backend Mastery</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">60 FPS</span>
+            <span class="metric-label">Performance-Driven UI/UX</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">100%</span>
+            <span class="metric-label">Mobile-First Responsive</span>
+          </div>
+          <div class="metric-card">
+            <span class="metric-number">REST &amp; SQL</span>
+            <span class="metric-label">Scalable Data Architectures</span>
+          </div>
+        </div>
+
+      </div>
+    </section>
+
+    <!-- SECTION: FEATURED PROJECTS -->
+    <section class="section projects-section" id="projects">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">PORTFOLIO HIGHLIGHTS</span>
+          <h2 class="section-title">Featured Engineering Projects</h2>
+          <p class="section-subtitle">Real-world applications showcasing architectural rigor, clean code, responsive design, and scalable backend design.</p>
+        </div>
+
+        <div class="projects-grid">
+
+          <!-- PROJECT 1: PULPEE RÉSERVE -->
+          <article class="project-card featured-highlight">
+            <div class="project-header">
+              <div class="project-badge-row">
+                <span class="project-status-tag">Flagship Architecture</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Pulpee Réserve — Luxury Artisanal E-Commerce Platform</h3>
+              <p class="project-tagline">End-to-End Responsive Web Application &amp; Sommelier Sensory Experience</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-desc">
+                Architected and deployed a multi-page luxury beverage brand platform featuring dynamic category filtering, interactive sommelier sensory attribute profiling, and a silent 60fps 3D micro-interaction engine.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">JavaScript (ES6+)</span>
+                <span class="tech-tag">Modern CSS3 / Flexbox / Grid</span>
+                <span class="tech-tag">Client-Side State Routing</span>
+                <span class="tech-tag">Multi-Language Engine (EN/FR/NL)</span>
+                <span class="tech-tag">Mobile Responsive Architecture</span>
+                <span class="tech-tag">Hardware-Accelerated 3D Tilt</span>
+                <span class="tech-tag">Automated Verification Suite</span>
+              </div>
+
+              <div class="project-highlights">
+                <h4>Core Engineering Achievements:</h4>
+                <ul>
+                  <li><strong>Client-Side State Routing</strong>: Implemented real-time URL parameter routing (`history.replaceState`) without full-page reloads, updating nutrition facts, flavor profiles, and mixology recipes dynamically across 14 product variants.</li>
+                  <li><strong>Interactive Sommelier Suite</strong>: Built real-time animated sensory attribute bars (Brix sweetness, volcanic acidity, suspended pulp density, and floral bouquet) that recalibrate instantly upon flavor switching.</li>
+                  <li><strong>Custom Localization System</strong>: Developed client-side multi-language localization supporting English, French, and Dutch with `localStorage` persistence and instant zero-latency UI re-rendering.</li>
+                  <li><strong>Mobile-First Dual-Column Grid</strong>: Engineered responsive 2-column mobile card layouts, horizontal touch-swipe filter pills, and full-screen drawer navigation with zero layout shift (CLS).</li>
+                  <li><strong>Quality Assurance</strong>: Authored a custom Python testing suite verifying HTTP status codes, routing endpoints, and 57 unique asset dependencies with 100% pass rate.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-footer print-hide">
+              <a href="http://localhost:8080" target="_blank" class="btn btn-primary btn-sm">View Live Demo &nearr;</a>
+              <a href="https://github.com/SSManikandaprabu" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">GitHub Profile</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 2: MAVORA CHOCOLATE -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge-row">
+                <span class="project-status-tag">Full-Stack E-Commerce</span>
+                <span class="project-year">2026</span>
+              </div>
+              <h3 class="project-title">Mavora Luxury Confectionery Web Application</h3>
+              <p class="project-tagline">High-Converting E-Commerce Platform with Cart &amp; Checkout State</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-desc">
+                Full-stack luxury confectionery application deployed to production cloud infrastructure. Features dynamic product configuration, cart state management, checkout flows, and automated inventory sync.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Node.js</span>
+                <span class="tech-tag">Express</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">RESTful API</span>
+                <span class="tech-tag">Railway Cloud</span>
+                <span class="tech-tag">Responsive UI</span>
+              </div>
+
+              <div class="project-highlights">
+                <h4>Core Engineering Achievements:</h4>
+                <ul>
+                  <li>Engineered robust cart state persistence across user sessions with client-side synchronization and optimistic UI updates.</li>
+                  <li>Integrated secure checkout endpoints with server-side order validation, currency conversion, and receipt generation.</li>
+                  <li>Deployed on Railway with containerized CI/CD pipelines, automated health probes, and custom domain SSL management.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-footer print-hide">
+              <a href="https://github.com/SSManikandaprabu" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Repository Details</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 3: CLOUD MICROSERVICES & API GATEWAY -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge-row">
+                <span class="project-status-tag">Backend Architecture</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Cloud Microservices &amp; High-Throughput API Gateway</h3>
+              <p class="project-tagline">Scalable Service Layer with Distributed Caching &amp; JWT Security</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-desc">
+                Designed a high-concurrency API gateway and microservices backend handling authentication, rate limiting, request routing, and distributed data caching.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">Python / FastAPI</span>
+                <span class="tech-tag">Node.js / Express</span>
+                <span class="tech-tag">Redis Cache</span>
+                <span class="tech-tag">PostgreSQL</span>
+                <span class="tech-tag">Docker</span>
+                <span class="tech-tag">JWT Security</span>
+              </div>
+
+              <div class="project-highlights">
+                <h4>Core Engineering Achievements:</h4>
+                <ul>
+                  <li>Achieved sub-20ms P95 response times by implementing distributed Redis caching for high-frequency database read operations.</li>
+                  <li>Configured token bucket rate limiting and IP throttling to safeguard downstream microservices from denial-of-service spikes.</li>
+                  <li>Structured clean relational database schemas in PostgreSQL with foreign-key constraints, index optimization, and automated migrations.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-footer print-hide">
+              <a href="https://github.com/SSManikandaprabu" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Architecture Docs</a>
+            </div>
+          </article>
+
+          <!-- PROJECT 4: REAL-TIME TELEMETRY DASHBOARD -->
+          <article class="project-card">
+            <div class="project-header">
+              <div class="project-badge-row">
+                <span class="project-status-tag">Event-Driven Full Stack</span>
+                <span class="project-year">2025</span>
+              </div>
+              <h3 class="project-title">Real-Time Collaborative Telemetry Dashboard</h3>
+              <p class="project-tagline">WebSocket-Driven Live Stream Analytics &amp; Visualization</p>
+            </div>
+
+            <div class="project-body">
+              <p class="project-desc">
+                Event-driven dashboard consuming high-frequency real-time telemetry streams over WebSockets with live time-series charts, threshold alert triggers, and multi-client state syncing.
+              </p>
+
+              <div class="project-tech-tags">
+                <span class="tech-tag">WebSockets (ws)</span>
+                <span class="tech-tag">TypeScript</span>
+                <span class="tech-tag">Chart.js</span>
+                <span class="tech-tag">Tailwind CSS</span>
+                <span class="tech-tag">Node.js</span>
+              </div>
+
+              <div class="project-highlights">
+                <h4>Core Engineering Achievements:</h4>
+                <ul>
+                  <li>Engineered bidirectional WebSocket communication pipeline streaming updates with under 50ms latency.</li>
+                  <li>Designed memory-safe canvas rendering queues preventing frame drops during high-volume data ingestion.</li>
+                  <li>Provided responsive data filtering, historical playback controls, and exportable CSV/JSON analytics reports.</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="project-footer print-hide">
+              <a href="https://github.com/SSManikandaprabu" target="_blank" rel="noopener" class="btn btn-secondary btn-sm">Code Walkthrough</a>
+            </div>
+          </article>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: SKILLS & COMPETENCIES -->
+    <section class="section skills-section" id="skills">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">TECHNICAL ARSENAL</span>
+          <h2 class="section-title">Skills &amp; Technologies</h2>
+          <p class="section-subtitle">Comprehensive toolkit across the modern full-stack development lifecycle.</p>
+        </div>
+
+        <div class="skills-filter-bar print-hide">
+          <button class="skill-filter-btn --active" data-cat="all">All Disciplines</button>
+          <button class="skill-filter-btn" data-cat="frontend">Frontend &amp; UI/UX</button>
+          <button class="skill-filter-btn" data-cat="backend">Backend &amp; APIs</button>
+          <button class="skill-filter-btn" data-cat="database">Databases &amp; Caching</button>
+          <button class="skill-filter-btn" data-cat="devops">Cloud &amp; DevOps</button>
+        </div>
+
+        <div class="skills-grid">
+
+          <div class="skill-category-card" data-category="frontend">
+            <div class="skill-card-header">
+              <span class="skill-icon">&#128187;</span>
+              <h3>Frontend Engineering</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>JavaScript (ES6+)</strong> — Async/Await, Closures, DOM Architecture</li>
+              <li><strong>TypeScript</strong> — Static Typing, Generics, Interfaces</li>
+              <li><strong>React &amp; Next.js</strong> — Hooks, Context, Server Components</li>
+              <li><strong>HTML5 &amp; Modern CSS3</strong> — Flexbox, Grid, Custom Properties</li>
+              <li><strong>Responsive Web Design (RWD)</strong> — Mobile-First, Touch-Action</li>
+              <li><strong>Web Animations &amp; Physics</strong> — 60fps CSS Transforms, Canvas API</li>
+              <li><strong>State Management</strong> — Client-Side URL Routing, LocalStorage</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card" data-category="backend">
+            <div class="skill-card-header">
+              <span class="skill-icon">&#9881;&#65039;</span>
+              <h3>Backend Engineering</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Node.js &amp; Express</strong> — RESTful APIs, Middleware Architecture</li>
+              <li><strong>Python &amp; FastAPI</strong> — High-Concurrency Async Endpoints, Pydantic</li>
+              <li><strong>WebSockets</strong> — Event-Driven Architecture, Real-Time Sync</li>
+              <li><strong>API Security</strong> — JWT Authentication, CORS, Rate Limiting</li>
+              <li><strong>API Design</strong> — REST Standards, GraphQL, Webhooks</li>
+              <li><strong>Microservices</strong> — Service Decoupling, Inter-Service Communication</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card" data-category="database">
+            <div class="skill-card-header">
+              <span class="skill-icon">&#128451;&#65039;</span>
+              <h3>Databases &amp; Caching</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>PostgreSQL</strong> — Relational Schema Design, Foreign Keys, Indexing</li>
+              <li><strong>MongoDB</strong> — Document Data Modeling, Aggregation Pipelines</li>
+              <li><strong>Redis</strong> — In-Memory Key/Value Caching, Pub/Sub, Session Store</li>
+              <li><strong>SQL Optimization</strong> — Query Performance Tuning, Constraints</li>
+              <li><strong>Data Integrity</strong> — ACID Compliance, Transactions, Migrations</li>
+            </ul>
+          </div>
+
+          <div class="skill-category-card" data-category="devops">
+            <div class="skill-card-header">
+              <span class="skill-icon">&#9729;&#65039;</span>
+              <h3>Cloud &amp; DevOps</h3>
+            </div>
+            <ul class="skill-list">
+              <li><strong>Railway &amp; Cloud Hosting</strong> — Service Provisioning, Deployments</li>
+              <li><strong>Docker &amp; Containerization</strong> — Dockerfiles, Multi-Stage Builds</li>
+              <li><strong>Git &amp; GitHub CLI</strong> — Feature Branching, Rebase, Actions CI/CD</li>
+              <li><strong>Linux &amp; Shell Scripting</strong> — Server Administration, Automation</li>
+              <li><strong>Monitoring &amp; Observability</strong> — Health Probes, Metrics, Logging</li>
+            </ul>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: EXPERIENCE & HIGHLIGHTS -->
+    <section class="section experience-section" id="experience">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">CAREER MILESTONES</span>
+          <h2 class="section-title">Professional Experience</h2>
+          <p class="section-subtitle">Track record of building resilient software solutions and engineering impact.</p>
+        </div>
+
+        <div class="timeline">
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Full Stack Software Engineer</h3>
+                  <span class="timeline-company">Independent &amp; Contract Web Architecture</span>
+                </div>
+                <span class="timeline-date">2024 — Present</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Architected full-lifecycle web applications from concept to cloud deployment across e-commerce, telemetry, and SaaS verticals.</li>
+                <li>Engineered client-side caching, image CDNs, and hardware-accelerated layouts to consistently hit 90+ Google PageSpeed scores.</li>
+                <li>Designed RESTful and WebSocket backends handling authenticated requests with JWTs, rate limiters, and PostgreSQL database normalization.</li>
+                <li>Implemented comprehensive cross-browser and mobile responsive testing, ensuring pixel-perfect UX from 320px phone screens to 4K displays.</li>
+              </ul>
+            </div>
+          </div>
+
+          <div class="timeline-item">
+            <div class="timeline-dot"></div>
+            <div class="timeline-content">
+              <div class="timeline-header">
+                <div>
+                  <h3 class="timeline-role">Software Engineering &amp; Systems Development</h3>
+                  <span class="timeline-company">Computer Science &amp; Technical Projects</span>
+                </div>
+                <span class="timeline-date">2021 — 2024</span>
+              </div>
+              <ul class="timeline-bullets">
+                <li>Built core algorithms in data structures, database design, computer networks, and distributed systems.</li>
+                <li>Created open-source developer tooling and automation scripts in Python, JavaScript, and Bash.</li>
+                <li>Collaborated in agile team environments using Git branching workflows, pull request code reviews, and automated CI pipelines.</li>
+              </ul>
+            </div>
+          </div>
+
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: EDUCATION & CREDENTIALS -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-tag">BACKGROUND</span>
+          <h2 class="section-title">Education &amp; Credentials</h2>
+        </div>
+
+        <div class="education-grid">
+          <div class="education-card">
+            <div class="edu-icon">&#127891;</div>
+            <div class="edu-info">
+              <h3>Bachelor of Engineering (B.E.) — Computer Science &amp; Engineering</h3>
+              <p class="edu-sub">Core Focus: Data Structures &amp; Algorithms, Database Management Systems (DBMS), Operating Systems, Software Engineering, Web Technologies</p>
+            </div>
+          </div>
+
+          <div class="education-card">
+            <div class="edu-icon">&#127942;</div>
+            <div class="edu-info">
+              <h3>Full Stack Web Architecture &amp; Cloud Deployment</h3>
+              <p class="edu-sub">Certified mastery in Modern JavaScript (ES6+), Node.js Microservices, Containerization with Docker, and Production Cloud Infrastructure.</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- SECTION: CONTACT & HIRE ME -->
+    <section class="section contact-section" id="contact">
+      <div class="container">
+        <div class="contact-card">
+          <div class="contact-info-col">
+            <span class="section-tag">LET'S BUILD SOMETHING GREAT</span>
+            <h2 class="contact-title">Ready to hire or collaborate?</h2>
+            <p class="contact-desc">
+              Whether you need a high-impact <strong>Full Stack Engineer</strong> for full-time roles, contract architecture, or performance optimization — my inbox is always open.
+            </p>
+
+            <div class="direct-contact-list">
+              <a href="mailto:ssmanikandaprabu@gmail.com" class="direct-contact-item">
+                <span class="direct-icon">&#9993;&#65039;</span>
+                <div>
+                  <strong>Email</strong>
+                  <span>ssmanikandaprabu@gmail.com</span>
+                </div>
+              </a>
+
+              <a href="https://github.com/SSManikandaprabu" target="_blank" rel="noopener" class="direct-contact-item">
+                <span class="direct-icon">&#128187;</span>
+                <div>
+                  <strong>GitHub</strong>
+                  <span>github.com/SSManikandaprabu</span>
+                </div>
+              </a>
+
+              <div class="direct-contact-item">
+                <span class="direct-icon">&#128205;</span>
+                <div>
+                  <strong>Location</strong>
+                  <span>Tamil Nadu, India (Available for Remote Global Roles)</span>
+                </div>
+              </div>
+            </div>
+          </div>
+
+          <div class="contact-form-col print-hide">
+            <form id="contact-form" class="inquiry-form">
+              <div class="form-group">
+                <label for="form-name">Your Name</label>
+                <input type="text" id="form-name" name="name" required placeholder="e.g. Alex Johnson" />
+              </div>
+
+              <div class="form-group">
+                <label for="form-email">Your Email</label>
+                <input type="email" id="form-email" name="email" required placeholder="alex@company.com" />
+              </div>
+
+              <div class="form-group">
+                <label for="form-subject">Subject</label>
+                <input type="text" id="form-subject" name="subject" placeholder="Full-Stack Opportunity / Project Inquiry" />
+              </div>
+
+              <div class="form-group">
+                <label for="form-message">Message</label>
+                <textarea id="form-message" name="message" rows="4" required placeholder="Tell me about your team or project requirements..."></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary btn-block" id="form-submit-btn">Send Message &rarr;</button>
+              <div id="form-response-msg" class="form-feedback" style="display: none;"></div>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="container footer-container">
+      <div class="footer-left">
+        <strong>S S Manikanda Prabu</strong> — Full Stack Software Engineer
+        <p>&copy; 2026. Designed with modern architecture, responsive mobile standards, and deployed to cloud.</p>
+      </div>
+
+      <div class="footer-right print-hide">
+        <a href="#hero" class="back-to-top-btn" title="Back to top">&uarr; Back to Top</a>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
